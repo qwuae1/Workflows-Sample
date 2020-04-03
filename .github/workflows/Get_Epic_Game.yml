@@ -31,9 +31,9 @@ jobs:
           cd workdir
           npm install
           node gimme_free_epic_shit '${{ secrets.EMAIL1 }}' '${{ secrets.PASSWD }}' > games.info
-          node gimme_free_epic_shit '${{ secrets.EMAIL2 }}' '${{ secrets.PASSWD }}' > games.info
-          node gimme_free_epic_shit '${{ secrets.EMAIL3 }}' '${{ secrets.PASSWD }}' > games.info
-          node gimme_free_epic_shit '${{ secrets.EMAIL4 }}' '${{ secrets.PASSWD }}' > games.info
+          node gimme_free_epic_shit '${{ secrets.EMAIL2 }}' '${{ secrets.PASSWD }}' 
+          node gimme_free_epic_shit '${{ secrets.EMAIL3 }}' '${{ secrets.PASSWD }}' 
+          node gimme_free_epic_shit '${{ secrets.EMAIL4 }}' '${{ secrets.PASSWD }}' 
           
 
 
