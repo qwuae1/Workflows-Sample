@@ -8,7 +8,7 @@ on:
     types: epicgame
 
 jobs:
-  MainWork:
+  build:
     runs-on: ubuntu-latest
     steps:      
       - name: Clone Workflow Repository
