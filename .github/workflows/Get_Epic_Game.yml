@@ -35,6 +35,7 @@ jobs:
           node gimme_free_epic_shit '${{ secrets.EMAIL2 }}' '${{ secrets.PASSWD }}' > games.info
           node gimme_free_epic_shit '${{ secrets.EMAIL3 }}' '${{ secrets.PASSWD }}' > games.info
           node gimme_free_epic_shit '${{ secrets.EMAIL4 }}' '${{ secrets.PASSWD }}' > games.info
+          node gimme_free_epic_shit '${{ secrets.EMAIL5 }}' '${{ secrets.PASSWD }}' > games.info
           
 
 
