@@ -34,7 +34,19 @@ jobs:
               command: |
                     cd workdir
                     npm install
-                    node gimme_free_epic_shit '${{ secrets.EMAIL }}' '${{ secrets.PASSWD }}' > games.info
+                    node gimme_free_epic_shit unipittsburgh@gmail.com '${{ secrets.PASSWD }}' > games.info
+      - name: Edit Games.info
+        if: always()
+        run: |
+          cd workdir
+          sed -i '1d' games.info
+          sed -i 's/Successfully claimed/成功领取/' games.info
+          sed -i 's/was already claimed for this account/已经领取/' games.info
+          sed -i '$d' games.info
+          date --rfc-3339=seconds >> ../games.info
+          cat games.info >> ../games.info
+          echo >> ../games.info
+          
       - name: Get Gifts
         uses: nick-invision/retry@v1
         with:
@@ -44,6 +56,17 @@ jobs:
                     cd workdir
                     npm install
                     node gimme_free_epic_shit '${{ secrets.EMAIL1 }}' '${{ secrets.PASSWD }}' > games.info
+      - name: Edit Games.info
+        if: always()
+        run: |
+          cd workdir
+          sed -i '1d' games.info
+          sed -i 's/Successfully claimed/成功领取/' games.info
+          sed -i 's/was already claimed for this account/已经领取/' games.info
+          sed -i '$d' games.info
+          date --rfc-3339=seconds >> ../games.info
+          cat games.info >> ../games.info
+          echo >> ../games.info
       - name: Get Gifts
         uses: nick-invision/retry@v1
         with:
@@ -53,6 +76,17 @@ jobs:
                     cd workdir
                     npm install
                     node gimme_free_epic_shit '${{ secrets.EMAIL2 }}' '${{ secrets.PASSWD }}' > games.info
+      - name: Edit Games.info
+        if: always()
+        run: |
+          cd workdir
+          sed -i '1d' games.info
+          sed -i 's/Successfully claimed/成功领取/' games.info
+          sed -i 's/was already claimed for this account/已经领取/' games.info
+          sed -i '$d' games.info
+          date --rfc-3339=seconds >> ../games.info
+          cat games.info >> ../games.info
+          echo >> ../games.info
       - name: Get Gifts
         uses: nick-invision/retry@v1
         with:
@@ -62,6 +96,17 @@ jobs:
                     cd workdir
                     npm install
                     node gimme_free_epic_shit '${{ secrets.EMAIL3 }}' '${{ secrets.PASSWD }}' > games.info
+      - name: Edit Games.info
+        if: always()
+        run: |
+          cd workdir
+          sed -i '1d' games.info
+          sed -i 's/Successfully claimed/成功领取/' games.info
+          sed -i 's/was already claimed for this account/已经领取/' games.info
+          sed -i '$d' games.info
+          date --rfc-3339=seconds >> ../games.info
+          cat games.info >> ../games.info
+          echo >> ../games.info
       - name: Get Gifts
         uses: nick-invision/retry@v1
         with:
@@ -71,6 +116,17 @@ jobs:
                     cd workdir
                     npm install
                     node gimme_free_epic_shit '${{ secrets.EMAIL4 }}' '${{ secrets.PASSWD }}' > games.info
+      - name: Edit Games.info
+        if: always()
+        run: |
+          cd workdir
+          sed -i '1d' games.info
+          sed -i 's/Successfully claimed/成功领取/' games.info
+          sed -i 's/was already claimed for this account/已经领取/' games.info
+          sed -i '$d' games.info
+          date --rfc-3339=seconds >> ../games.info
+          cat games.info >> ../games.info
+          echo >> ../games.info
       - name: Get Gifts
         uses: nick-invision/retry@v1
         with:
