@@ -1,5 +1,5 @@
 name: Get Epic Game
-
+# test
 on:
   # 每周五 UTC 时间 2:25 (中国时间周五 10：25)自动触发，使用前取消注释，即删除下面两行的前面的 #
   # 添加 master push pull 领取 可手动控制
