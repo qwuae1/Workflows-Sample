@@ -23,7 +23,7 @@ jobs:
       - name: Clone Claimer Repository
         uses: actions/checkout@v2
         with:
-          repository: QIXIAN-WU/epicgames-freebies-claimer
+          repository: Revadike/epicgames-freebies-claimer
           path: workdir
 
       # 在 'Settings' - 'Secrets' 添加 EMAIL (你的 Epic 邮箱)，PASSWD (你的 Epic 密码)
