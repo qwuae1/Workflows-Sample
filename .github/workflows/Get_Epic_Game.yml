@@ -157,7 +157,6 @@ jobs:
           git config --local user.name "GitHub Action"
           git add .
           git commit -m ":package: 领取游戏"
-          git 
 
       # 此处的 ${{ secrets.GITHUB_TOKEN }} 是 Actions 自有变量，不用管
       - name: GitHub Push
