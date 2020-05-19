@@ -162,7 +162,9 @@ jobs:
       - name: GitHub Push
         uses: ad-m/github-push-action@master
         with:
+          path: workdir
           github_token: ${{ secrets.GITHUB_TOKEN }}
+        
 
       # 如果需要推送到 Telegram 用来提示，取消注释以下内容
       # 这部分的内容可以查看 https://www.github.com/appleboy/telegram-action
