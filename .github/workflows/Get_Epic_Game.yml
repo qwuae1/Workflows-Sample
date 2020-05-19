@@ -33,18 +33,18 @@ jobs:
               command: |
                     cd workdir
                     npm install
-                    node claimer unipittsburgh@gmail.com '${{ secrets.PASSWD }}' 0 '${{ secrets.SECRET0 }}'> games.info
+                    node claimer unipittsburgh@gmail.com '${{ secrets.PASSWD }}' 0 '${{ secrets.SECRET0 }}'> games_up.info
       - name: Edit Games.info
         if: always()
         run: |
           cd workdir
-          sed -i '1d' games.info
-          sed -i 's/Successfully claimed/成功领取/' games.info
-          sed -i 's/was already claimed for this account/已经领取/' games.info
-          sed -i '$d' games.info
-          date --rfc-3339=seconds >> ../games.info
-          cat games.info >> ../games.info
-          echo >> ../games.info
+          sed -i '1d' games_up.info
+          sed -i 's/Successfully claimed/成功领取/' games_up.info
+          sed -i 's/was already claimed for this account/已经领取/' games_up.info
+          sed -i '$d' games_up.info
+          date --rfc-3339=seconds >> ../games_up.info
+          cat games.info >> ../games_up.info
+          echo >> ../games_up.info
           
       - name: Get Gifts
         uses: nick-invision/retry@v1
@@ -54,18 +54,18 @@ jobs:
               command: |
                     cd workdir
                     npm install
-                    node claimer neo.george.caffrey@gmail.com '${{ secrets.PASSWD }}' 0 '${{ secrets.SECRET1 }}' > games.info
+                    node claimer neo.george.caffrey@gmail.com '${{ secrets.PASSWD }}' 0 '${{ secrets.SECRET1 }}' > games_neo.info
       - name: Edit Games.info
         if: always()
         run: |
           cd workdir
-          sed -i '1d' games.info
-          sed -i 's/Successfully claimed/成功领取/' games.info
-          sed -i 's/was already claimed for this account/已经领取/' games.info
+          sed -i '1d' games_neo.info
+          sed -i 's/Successfully claimed/成功领取/' games_neo.info
+          sed -i 's/was already claimed for this account/已经领取/' games_neo.info
           sed -i '$d' games.info
-          date --rfc-3339=seconds >> ../games.info
-          cat games.info >> ../games.info
-          echo >> ../games.info
+          date --rfc-3339=seconds >> ../games_neo.info
+          cat games.info >> ../games_neo.info
+          echo >> ../games_neo.info
       - name: Get Gifts
         uses: nick-invision/retry@v1
         with:
@@ -74,18 +74,18 @@ jobs:
               command: |
                     cd workdir
                     npm install
-                    node claimer 267128979@qq.com '${{ secrets.PASSWD }}' 0 '${{ secrets.SECRET2 }}'> games.info
+                    node claimer 267128979@qq.com '${{ secrets.PASSWD }}' 0 '${{ secrets.SECRET2 }}'> games_26.iufo
       - name: Edit Games.info
         if: always()
         run: |
           cd workdir
-          sed -i '1d' games.info
-          sed -i 's/Successfully claimed/成功领取/' games.info
-          sed -i 's/was already claimed for this account/已经领取/' games.info
+          sed -i '1d' games_26.info
+          sed -i 's/Successfully claimed/成功领取/' games_26.info
+          sed -i 's/was already claimed for this account/已经领取/' games_26.info
           sed -i '$d' games.info
-          date --rfc-3339=seconds >> ../games.info
-          cat games.info >> ../games.info
-          echo >> ../games.info
+          date --rfc-3339=seconds >> ../games_26.info
+          cat games.info >> ../games_26.info
+          echo >> ../games_26.info
       - name: Get Gifts
         uses: nick-invision/retry@v1
         with:
@@ -94,18 +94,18 @@ jobs:
               command: |
                     cd workdir
                     npm install
-                    node gimme_free_epic_shit caffrey_wu@163.com '${{ secrets.PASSWD }}' 0 '${{ secrets.SECRET3 }}'> games.info
+                    node claimer caffrey_wu@163.com '${{ secrets.PASSWD }}' 0 '${{ secrets.SECRET3 }}'> games_ca.info
       - name: Edit Games.info
         if: always()
         run: |
           cd workdir
-          sed -i '1d' games.info
-          sed -i 's/Successfully claimed/成功领取/' games.info
-          sed -i 's/was already claimed for this account/已经领取/' games.info
-          sed -i '$d' games.info
-          date --rfc-3339=seconds >> ../games.info
-          cat games.info >> ../games.info
-          echo >> ../games.info
+          sed -i '1d' games_ca.info
+          sed -i 's/Successfully claimed/成功领取/' games_ca.info
+          sed -i 's/was already claimed for this account/已经领取/' games_ca.info
+          sed -i '$d' games_ca.info
+          date --rfc-3339=seconds >> ../games_ca.info
+          cat games.info >> ../games_ca.info
+          echo >> ../games_ca.info
       - name: Get Gifts
         uses: nick-invision/retry@v1
         with:
@@ -114,18 +114,18 @@ jobs:
               command: |
                     cd workdir
                     npm install
-                    node gimme_free_epic_shit qiw63@pitt.edu '${{ secrets.PASSWD }}' 0 '${{ secrets.SECRET4 }}'> games.info
+                    node claimer qiw63@pitt.edu '${{ secrets.PASSWD }}' 0 '${{ secrets.SECRET4 }}'> games_qi.info
       - name: Edit Games.info
         if: always()
         run: |
           cd workdir
-          sed -i '1d' games.info
-          sed -i 's/Successfully claimed/成功领取/' games.info
-          sed -i 's/was already claimed for this account/已经领取/' games.info
-          sed -i '$d' games.info
-          date --rfc-3339=seconds >> ../games.info
-          cat games.info >> ../games.info
-          echo >> ../games.info
+          sed -i '1d' games_qi.info
+          sed -i 's/Successfully claimed/成功领取/' games_qi.info
+          sed -i 's/was already claimed for this account/已经领取/' games_qi.info
+          sed -i '$d' games_qi.info
+          date --rfc-3339=seconds >> ../games_qi.info
+          cat games.info >> ../games_qi.info
+          echo >> ../games_qi.info
       - name: Get Gifts
         uses: nick-invision/retry@v1
         with:
@@ -134,7 +134,7 @@ jobs:
               command: |
                     cd workdir
                     npm install
-                    node gimme_free_epic_shit qwuae@connect.ust.hk '${{ secrets.PASSWD }}' 0 '${{ secrets.SECRET5 }}'> games.info
+                    node claimer qwuae@connect.ust.hk '${{ secrets.PASSWD }}' 0 '${{ secrets.SECRET5 }}'> games_qw.info
           
 
 
@@ -142,13 +142,13 @@ jobs:
         if: always()
         run: |
           cd workdir
-          sed -i '1d' games.info
-          sed -i 's/Successfully claimed/成功领取/' games.info
-          sed -i 's/was already claimed for this account/已经领取/' games.info
-          sed -i '$d' games.info
-          date --rfc-3339=seconds >> ../games.info
-          cat games.info >> ../games.info
-          echo >> ../games.info
+          sed -i '1d' games_qw.info
+          sed -i 's/Successfully claimed/成功领取/' games_qw.info
+          sed -i 's/was already claimed for this account/已经领取/' games_qw.info
+          sed -i '$d' games_qw.info
+          date --rfc-3339=seconds >> ../games_qw.info
+          cat games.info >> ../games_qw.info
+          echo >> ../games_qw.info
 
       - name: Commit Files
         run: |
