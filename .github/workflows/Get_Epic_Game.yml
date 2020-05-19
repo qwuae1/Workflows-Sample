@@ -84,7 +84,7 @@ jobs:
           sed -i 's/was already claimed for this account/已经领取/' games_26.info
           sed -i '$d' games_26.info
           date --rfc-3339=seconds >> ../games_26.info
-          cat games.info >> ../games_26.info
+          cat games_26.info >> ../games_26.info
           echo >> ../games_26.info
       - name: Get Gifts
         uses: nick-invision/retry@v1
@@ -104,7 +104,7 @@ jobs:
           sed -i 's/was already claimed for this account/已经领取/' games_ca.info
           sed -i '$d' games_ca.info
           date --rfc-3339=seconds >> ../games_ca.info
-          cat games.info >> ../games_ca.info
+          cat games_ca.info >> ../games_ca.info
           echo >> ../games_ca.info
       - name: Get Gifts
         uses: nick-invision/retry@v1
