@@ -43,7 +43,7 @@ jobs:
           sed -i 's/was already claimed for this account/已经领取/' games_up.info
           sed -i '$d' games_up.info
           date --rfc-3339=seconds >> ../games_up.info
-          cat games.info >> ../games_up.info
+          cat games_up.info >> ../games_up.info
           echo >> ../games_up.info
           
       - name: Get Gifts
@@ -62,9 +62,9 @@ jobs:
           sed -i '1d' games_neo.info
           sed -i 's/Successfully claimed/成功领取/' games_neo.info
           sed -i 's/was already claimed for this account/已经领取/' games_neo.info
-          sed -i '$d' games.info
+          sed -i '$d' games_neo.info
           date --rfc-3339=seconds >> ../games_neo.info
-          cat games.info >> ../games_neo.info
+          cat games_neo.info >> ../games_neo.info
           echo >> ../games_neo.info
       - name: Get Gifts
         uses: nick-invision/retry@v1
@@ -82,7 +82,7 @@ jobs:
           sed -i '1d' games_26.info
           sed -i 's/Successfully claimed/成功领取/' games_26.info
           sed -i 's/was already claimed for this account/已经领取/' games_26.info
-          sed -i '$d' games.info
+          sed -i '$d' games_26.info
           date --rfc-3339=seconds >> ../games_26.info
           cat games.info >> ../games_26.info
           echo >> ../games_26.info
@@ -124,7 +124,7 @@ jobs:
           sed -i 's/was already claimed for this account/已经领取/' games_qi.info
           sed -i '$d' games_qi.info
           date --rfc-3339=seconds >> ../games_qi.info
-          cat games.info >> ../games_qi.info
+          cat games_qi.info >> ../games_qi.info
           echo >> ../games_qi.info
       - name: Get Gifts
         uses: nick-invision/retry@v1
@@ -147,7 +147,7 @@ jobs:
           sed -i 's/was already claimed for this account/已经领取/' games_qw.info
           sed -i '$d' games_qw.info
           date --rfc-3339=seconds >> ../games_qw.info
-          cat games.info >> ../games_qw.info
+          cat games_qw.info >> ../games_qw.info
           echo >> ../games_qw.info
 
       - name: Commit Files
