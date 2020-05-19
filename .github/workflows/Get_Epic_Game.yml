@@ -17,9 +17,6 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:      
-      - name: Clone Workflow Repository
-        uses: actions/checkout@v2
-
       - name: Clone Claimer Repository
         uses: actions/checkout@v2
         with:
@@ -36,7 +33,7 @@ jobs:
               command: |
                     cd workdir
                     npm install
-                    node gimme_free_epic_shit unipittsburgh@gmail.com '${{ secrets.PASSWD }}' > games.info
+                    node claimer unipittsburgh@gmail.com '${{ secrets.PASSWD }}' 0 '${{ secrets.SECRET0 }}'> games.info
       - name: Edit Games.info
         if: always()
         run: |
