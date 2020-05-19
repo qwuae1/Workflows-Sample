@@ -74,7 +74,7 @@ jobs:
               command: |
                     cd workdir
                     npm install
-                    node claimer 267128979@qq.com '${{ secrets.PASSWD }}' 0 '${{ secrets.SECRET2 }}'> games_26.iufo
+                    node claimer 267128979@qq.com '${{ secrets.PASSWD }}' 0 '${{ secrets.SECRET2 }}'> games_26.info
       - name: Edit Games.info
         if: always()
         run: |
