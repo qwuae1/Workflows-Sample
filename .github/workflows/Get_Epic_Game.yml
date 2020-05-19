@@ -23,7 +23,8 @@ jobs:
       - name: Clone Claimer Repository
         uses: actions/checkout@v2
         with:
-          repository: Revadike/epicgames-freebies-claimer
+          repository: lingsamuel/epicgames-freebies-claimer
+          ref: 'aa21c57d0ef19948a4f2864207173c86d5c0ffb7'
           path: workdir
 
       # 在 'Settings' - 'Secrets' 添加 EMAIL (你的 Epic 邮箱)，PASSWD (你的 Epic 密码)
@@ -56,7 +57,7 @@ jobs:
               command: |
                     cd workdir
                     npm install
-                    node gimme_free_epic_shit neo.george.caffrey@gmail.com '${{ secrets.PASSWD }}' > games.info
+                    node claimer neo.george.caffrey@gmail.com '${{ secrets.PASSWD }}' 0 '${{ secrets.SECRET1 }}' > games.info
       - name: Edit Games.info
         if: always()
         run: |
@@ -76,7 +77,7 @@ jobs:
               command: |
                     cd workdir
                     npm install
-                    node gimme_free_epic_shit 267128979@qq.com '${{ secrets.PASSWD }}' > games.info
+                    node claimer 267128979@qq.com '${{ secrets.PASSWD }}' 0 '${{ secrets.SECRET2 }}'> games.info
       - name: Edit Games.info
         if: always()
         run: |
@@ -96,7 +97,7 @@ jobs:
               command: |
                     cd workdir
                     npm install
-                    node gimme_free_epic_shit caffrey_wu@163.com '${{ secrets.PASSWD }}' > games.info
+                    node gimme_free_epic_shit caffrey_wu@163.com '${{ secrets.PASSWD }}' 0 '${{ secrets.SECRET3 }}'> games.info
       - name: Edit Games.info
         if: always()
         run: |
@@ -116,7 +117,7 @@ jobs:
               command: |
                     cd workdir
                     npm install
-                    node gimme_free_epic_shit qiw63@pitt.edu '${{ secrets.PASSWD }}' > games.info
+                    node gimme_free_epic_shit qiw63@pitt.edu '${{ secrets.PASSWD }}' 0 '${{ secrets.SECRET4 }}'> games.info
       - name: Edit Games.info
         if: always()
         run: |
@@ -136,7 +137,7 @@ jobs:
               command: |
                     cd workdir
                     npm install
-                    node gimme_free_epic_shit qwuae@connect.ust.hk '${{ secrets.PASSWD }}' > games.info
+                    node gimme_free_epic_shit qwuae@connect.ust.hk '${{ secrets.PASSWD }}' 0 '${{ secrets.SECRET5 }}'> games.info
           
 
 
