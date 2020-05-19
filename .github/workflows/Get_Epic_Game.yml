@@ -162,7 +162,7 @@ jobs:
       - name: GitHub Push
         uses: ad-m/github-push-action@master
         with:
-          path: workdir
+          directory: workdir
           github_token: ${{ secrets.GITHUB_TOKEN }}
         
 
